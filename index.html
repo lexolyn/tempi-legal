@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempi – Datenschutzerklärung / Privacy Policy</title>
+  <style>
+    :root {
+      --bg:      #0E0B08;
+      --surface: #1A1612;
+      --amber:   #E8A547;
+      --text:    #F3EBDF;
+      --dim:     #A89985;
+      --muted:   #6B5E4F;
+      --hairline: rgba(243,235,223,0.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 0 80px;
+    }
+    header {
+      padding: 48px 24px 32px;
+      border-bottom: 1px solid var(--hairline);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .app-name {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin-top: 8px;
+      color: var(--dim);
+      font-size: 14px;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--hairline);
+      background: none;
+      color: var(--dim);
+      font-size: 13px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s;
+    }
+    .lang-btn.active {
+      background: rgba(232,165,71,0.15);
+      border-color: rgba(232,165,71,0.4);
+      color: var(--amber);
+    }
+    section { display: none; }
+    section.active { display: block; }
+    h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin: 36px 0 10px;
+    }
+    h2:first-child { margin-top: 0; }
+    p { color: var(--dim); margin-bottom: 14px; }
+    ul {
+      color: var(--dim);
+      margin: 0 0 14px 20px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); font-weight: 600; }
+    a { color: var(--amber); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin: 20px 0;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--hairline);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Tempi</div>
+  <h1>Privacy Policy<br>Datenschutzerklärung</h1>
+  <p class="subtitle">Metronome &amp; Chromatic Tuner</p>
+</header>
+
+<main>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('en')">English</button>
+    <button class="lang-btn" onclick="setLang('de')">Deutsch</button>
+    <button class="lang-btn" onclick="setLang('it')">Italiano</button>
+    <button class="lang-btn" onclick="setLang('es')">Español</button>
+    <button class="lang-btn" onclick="setLang('fr')">Français</button>
+  </div>
+
+  <!-- ── ENGLISH ── -->
+  <section id="en" class="active">
+    <h2>Overview</h2>
+    <p>Tempi is a metronome and chromatic tuner app. <strong>We collect no personal data.</strong> No account is required. No analytics, no advertising, no tracking of any kind.</p>
+
+    <div class="card">
+      <strong>In short:</strong> Tempi never sends any data off your device. Everything stays local.
+    </div>
+
+    <h2>Microphone</h2>
+    <p>The tuner function uses your device's microphone to detect pitch in real time. This audio is processed entirely <strong>on-device</strong> and is never recorded, stored, or transmitted.</p>
+    <p>You can deny microphone access at any time in your device settings. The metronome works fully without it; only the tuner requires the microphone.</p>
+
+    <h2>Data we collect</h2>
+    <p>None. Specifically:</p>
+    <ul>
+      <li>No account or registration</li>
+      <li>No analytics or crash reporting services</li>
+      <li>No advertising identifiers</li>
+      <li>No location data</li>
+      <li>No microphone recordings stored or transmitted</li>
+    </ul>
+
+    <h2>Local storage</h2>
+    <p>Tempi saves your settings (BPM, time signature, reference pitch, presets) locally on your device using standard app storage. This data never leaves your device and is deleted when you uninstall the app.</p>
+
+    <h2>Third-party services</h2>
+    <p>Tempi uses no third-party SDKs for analytics, advertising, or tracking. The app is distributed via Apple App Store and Google Play Store; their respective privacy policies apply to the download process.</p>
+
+    <h2>Children</h2>
+    <p>Tempi does not knowingly collect data from children or anyone else. The app is suitable for all ages.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? <a href="mailto:alexander.frizzi@gmail.com">alexander.frizzi@gmail.com</a></p>
+
+    <p class="updated">Last updated: April 2026</p>
+  </section>
+
+  <!-- ── DEUTSCH ── -->
+  <section id="de">
+    <h2>Überblick</h2>
+    <p>Tempi ist eine Metronom- und Stimmgerät-App. <strong>Wir erheben keine personenbezogenen Daten.</strong> Es ist kein Konto erforderlich. Keine Analyse, keine Werbung, kein Tracking jeglicher Art.</p>
+
+    <div class="card">
+      <strong>Kurz gesagt:</strong> Tempi sendet niemals Daten von deinem Gerät. Alles bleibt lokal.
+    </div>
+
+    <h2>Mikrofon</h2>
+    <p>Die Stimmgerät-Funktion verwendet das Mikrofon deines Geräts, um die Tonhöhe in Echtzeit zu erkennen. Diese Audiodaten werden vollständig <strong>auf dem Gerät</strong> verarbeitet und werden weder aufgezeichnet, gespeichert noch übertragen.</p>
+    <p>Du kannst den Mikrofonzugriff jederzeit in den Geräteeinstellungen verweigern. Das Metronom funktioniert vollständig ohne Mikrofon; nur das Stimmgerät benötigt es.</p>
+
+    <h2>Daten, die wir erheben</h2>
+    <p>Keine. Im Einzelnen:</p>
+    <ul>
+      <li>Kein Konto oder keine Registrierung</li>
+      <li>Keine Analyse- oder Absturzmeldie-Dienste</li>
+      <li>Keine Werbe-IDs</li>
+      <li>Keine Standortdaten</li>
+      <li>Keine Mikrofonaufnahmen gespeichert oder übertragen</li>
+    </ul>
+
+    <h2>Lokale Speicherung</h2>
+    <p>Tempi speichert deine Einstellungen (BPM, Taktart, Referenztonhöhe, Presets) lokal auf deinem Gerät mithilfe des Standard-App-Speichers. Diese Daten verlassen dein Gerät niemals und werden beim Deinstallieren der App gelöscht.</p>
+
+    <h2>Drittanbieter-Dienste</h2>
+    <p>Tempi verwendet keine Drittanbieter-SDKs für Analysen, Werbung oder Tracking. Die App wird über den Apple App Store und den Google Play Store vertrieben; deren jeweilige Datenschutzrichtlinien gelten für den Download-Prozess.</p>
+
+    <h2>Kinder</h2>
+    <p>Tempi erhebt wissentlich keine Daten von Kindern oder sonst jemandem. Die App ist für alle Altersgruppen geeignet.</p>
+
+    <h2>Kontakt</h2>
+    <p>Fragen? <a href="mailto:alexander.frizzi@gmail.com">alexander.frizzi@gmail.com</a></p>
+
+    <p class="updated">Zuletzt aktualisiert: April 2026</p>
+  </section>
+
+  <!-- ── ITALIANO ── -->
+  <section id="it">
+    <h2>Panoramica</h2>
+    <p>Tempi è un'app metronomo e accordatore cromatico. <strong>Non raccogliamo dati personali.</strong> Non è richiesto alcun account. Nessuna analisi, nessuna pubblicità, nessun tracciamento di alcun tipo.</p>
+
+    <div class="card">
+      <strong>In breve:</strong> Tempi non invia mai dati dal tuo dispositivo. Tutto rimane locale.
+    </div>
+
+    <h2>Microfono</h2>
+    <p>La funzione accordatore utilizza il microfono del tuo dispositivo per rilevare l'intonazione in tempo reale. Questo audio viene elaborato interamente <strong>sul dispositivo</strong> e non viene mai registrato, archiviato o trasmesso.</p>
+    <p>Puoi negare l'accesso al microfono in qualsiasi momento nelle impostazioni del dispositivo. Il metronomo funziona completamente senza di esso; solo l'accordatore richiede il microfono.</p>
+
+    <h2>Dati che raccogliamo</h2>
+    <p>Nessuno. Nello specifico:</p>
+    <ul>
+      <li>Nessun account o registrazione</li>
+      <li>Nessun servizio di analisi o segnalazione errori</li>
+      <li>Nessun identificatore pubblicitario</li>
+      <li>Nessun dato di localizzazione</li>
+      <li>Nessuna registrazione del microfono archiviata o trasmessa</li>
+    </ul>
+
+    <h2>Archiviazione locale</h2>
+    <p>Tempi salva le tue impostazioni (BPM, indicazione di tempo, intonazione di riferimento, preset) localmente sul tuo dispositivo. Questi dati non lasciano mai il tuo dispositivo e vengono eliminati quando disinstalli l'app.</p>
+
+    <h2>Contatto</h2>
+    <p>Domande? <a href="mailto:alexander.frizzi@gmail.com">alexander.frizzi@gmail.com</a></p>
+
+    <p class="updated">Ultimo aggiornamento: aprile 2026</p>
+  </section>
+
+  <!-- ── ESPAÑOL ── -->
+  <section id="es">
+    <h2>Resumen</h2>
+    <p>Tempi es una aplicación de metrónomo y afinador cromático. <strong>No recopilamos datos personales.</strong> No se requiere cuenta. Sin análisis, sin publicidad, sin seguimiento de ningún tipo.</p>
+
+    <div class="card">
+      <strong>En resumen:</strong> Tempi nunca envía datos desde tu dispositivo. Todo permanece local.
+    </div>
+
+    <h2>Micrófono</h2>
+    <p>La función de afinador utiliza el micrófono de tu dispositivo para detectar el tono en tiempo real. Este audio se procesa completamente <strong>en el dispositivo</strong> y nunca se graba, almacena ni transmite.</p>
+    <p>Puedes denegar el acceso al micrófono en cualquier momento en la configuración de tu dispositivo. El metrónomo funciona completamente sin él; solo el afinador requiere el micrófono.</p>
+
+    <h2>Datos que recopilamos</h2>
+    <p>Ninguno. En concreto:</p>
+    <ul>
+      <li>Sin cuenta ni registro</li>
+      <li>Sin servicios de análisis o informe de errores</li>
+      <li>Sin identificadores publicitarios</li>
+      <li>Sin datos de ubicación</li>
+      <li>Sin grabaciones de micrófono almacenadas ni transmitidas</li>
+    </ul>
+
+    <h2>Contacto</h2>
+    <p>¿Preguntas? <a href="mailto:alexander.frizzi@gmail.com">alexander.frizzi@gmail.com</a></p>
+
+    <p class="updated">Última actualización: abril 2026</p>
+  </section>
+
+  <!-- ── FRANÇAIS ── -->
+  <section id="fr">
+    <h2>Aperçu</h2>
+    <p>Tempi est une application métronome et accordeur chromatique. <strong>Nous ne collectons aucune donnée personnelle.</strong> Aucun compte n'est requis. Pas d'analyse, pas de publicité, pas de suivi d'aucune sorte.</p>
+
+    <div class="card">
+      <strong>En bref :</strong> Tempi n'envoie jamais de données depuis votre appareil. Tout reste local.
+    </div>
+
+    <h2>Microphone</h2>
+    <p>La fonction accordeur utilise le microphone de votre appareil pour détecter la hauteur en temps réel. Cet audio est traité entièrement <strong>sur l'appareil</strong> et n'est jamais enregistré, stocké ou transmis.</p>
+    <p>Vous pouvez refuser l'accès au microphone à tout moment dans les paramètres de votre appareil. Le métronome fonctionne entièrement sans lui ; seul l'accordeur nécessite le microphone.</p>
+
+    <h2>Données collectées</h2>
+    <p>Aucune. En détail :</p>
+    <ul>
+      <li>Pas de compte ni d'inscription</li>
+      <li>Pas de services d'analyse ou de rapport de plantage</li>
+      <li>Pas d'identifiants publicitaires</li>
+      <li>Pas de données de localisation</li>
+      <li>Aucune enregistrement du microphone stocké ou transmis</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Des questions ? <a href="mailto:alexander.frizzi@gmail.com">alexander.frizzi@gmail.com</a></p>
+
+    <p class="updated">Dernière mise à jour : avril 2026</p>
+  </section>
+
+</main>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
