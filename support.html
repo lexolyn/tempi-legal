@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempi – Support</title>
+  <style>
+    :root {
+      --bg:      #0E0B08;
+      --surface: #1A1612;
+      --amber:   #E8A547;
+      --text:    #F3EBDF;
+      --dim:     #A89985;
+      --muted:   #6B5E4F;
+      --hairline: rgba(243,235,223,0.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 0 80px;
+    }
+    header {
+      padding: 48px 24px 32px;
+      border-bottom: 1px solid var(--hairline);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .app-name {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin-top: 8px;
+      color: var(--dim);
+      font-size: 14px;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+    h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin: 36px 0 10px;
+    }
+    h2:first-child { margin-top: 0; }
+    p { color: var(--dim); margin-bottom: 14px; }
+    ul {
+      color: var(--dim);
+      margin: 0 0 14px 20px;
+    }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text); font-weight: 600; }
+    a { color: var(--amber); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin: 20px 0;
+    }
+    .contact-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 24px;
+      background: rgba(232,165,71,0.12);
+      border: 1px solid rgba(232,165,71,0.35);
+      border-radius: 999px;
+      color: var(--amber);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .contact-btn:hover {
+      background: rgba(232,165,71,0.22);
+      text-decoration: none;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--hairline);
+      padding: 18px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .faq-a { color: var(--dim); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Tempi</div>
+  <h1>Support</h1>
+  <p class="subtitle">Metronome &amp; Chromatic Tuner</p>
+</header>
+
+<main>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">The tuner doesn't detect my instrument. What should I do?</p>
+    <p class="faq-a">Make sure Tempi has microphone permission in your device settings (Settings → Tempi → Microphone). Play a single, sustained note clearly and wait a moment. The tuner works best in a quiet environment. Full pitch detection is available on all platforms.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">The metronome click is not in sync with my playing.</p>
+    <p class="faq-a">Tempi uses a drift-corrected scheduler for precise timing. If you notice drift, try closing other apps running in the background. For very low latency, use wired headphones or a Bluetooth audio device with low latency mode.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I use Tap Tempo?</p>
+    <p class="faq-a">Tap the <strong>TAP</strong> button at least 3 times in rhythm — Tempi calculates the average BPM from your last 8 taps and sets it automatically.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I save and use presets?</p>
+    <p class="faq-a">Tap the <strong>LIST</strong> button in the metronome. You can save your current BPM, time signature, sound, and subdivision as a named preset. Enable Setlist mode to step through presets automatically during a performance.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Does Tempi record or store my microphone audio?</p>
+    <p class="faq-a">No. The microphone is used only for real-time pitch detection. No audio is ever recorded, stored, or transmitted. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">What reference pitch does the tuner use?</p>
+    <p class="faq-a">By default A4 = 440 Hz. You can change this in the tuner settings — useful for baroque tuning (415 Hz), orchestra tuning (442–444 Hz), or other non-standard references.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Is Tempi free?</p>
+    <p class="faq-a">Yes, Tempi is free to download and use with all core features included.</p>
+  </div>
+
+  <h2>Contact Us</h2>
+  <p>Can't find an answer? Send us a message and we'll get back to you as soon as possible.</p>
+  <a class="contact-btn" href="mailto:alexander.frizzi@gmail.com">alexander.frizzi@gmail.com</a>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="privacy.html">Privacy Policy / Datenschutzerklärung</a></li>
+  </ul>
+
+</main>
+
+</body>
+</html>
